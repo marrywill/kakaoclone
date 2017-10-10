@@ -3,13 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Box Model</title>
+  <head>
+    <style>
+      body,html {
+        margin: 0;
+        padding: 0;
+        background-color: green;
+        height: 100%;
+      }
+      .box {
+        background-color: yellow;
+        width: 50%;
+        height: 50%;
+        padding: 20px 10px 5px 2px;
+      }
+      .inside-box {
+        background-color: blue;
+        height: 50%;
+        width: 50%;
+        border: 5px solid red;
+      }
+    </style>
+  </head>
 </head>
 <body>
-  <h1>Title</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut consequatur, ex beatae odio in reprehenderit quod cupiditate. Deleniti consequuntur commodi in laborum, alias architecto tenetur maiores, aliquid perspiciatis sapiente?</p>
-  <a href="#">Fake link</a>
+  <div class="box">
+    <div class="inside-box"></div>
+  </div>
 </body>
 </html>
